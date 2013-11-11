@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "MenuViewController.h"
 
 @interface Week2MissilesAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property(retain, nonatomic)ViewController * viewController;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

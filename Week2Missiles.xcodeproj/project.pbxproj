@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		39601258181F4170008C6A47 /* catface.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39601256181F4170008C6A47 /* catface.jpg */; };
 		39601259181F4170008C6A47 /* dogface.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39601257181F4170008C6A47 /* dogface.jpg */; };
+		3979CA241830613C006E6979 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3979CA231830613C006E6979 /* MenuViewController.m */; };
 		39AEB5E4181F2A6100EA48DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AEB5E3181F2A6100EA48DD /* Foundation.framework */; };
 		39AEB5E6181F2A6100EA48DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AEB5E5181F2A6100EA48DD /* CoreGraphics.framework */; };
 		39AEB5E8181F2A6100EA48DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AEB5E7181F2A6100EA48DD /* UIKit.framework */; };
@@ -23,7 +24,7 @@
 		39AEB609181F2A6100EA48DD /* Week2MissilesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AEB608181F2A6100EA48DD /* Week2MissilesTests.m */; };
 		39AEB616181F2B4200EA48DD /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AEB613181F2B4200EA48DD /* Utility.m */; };
 		39AEB617181F2B4200EA48DD /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AEB614181F2B4200EA48DD /* Box.m */; };
-		39AEB61A181F2B7000EA48DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AEB619181F2B7000EA48DD /* ViewController.m */; };
+		39AEB61A181F2B7000EA48DD /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AEB619181F2B7000EA48DD /* GameViewController.m */; };
 		39AEB61C181F2BD700EA48DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AEB61B181F2BD700EA48DD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		39601256181F4170008C6A47 /* catface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = catface.jpg; sourceTree = "<group>"; };
 		39601257181F4170008C6A47 /* dogface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogface.jpg; sourceTree = "<group>"; };
+		3979CA221830613C006E6979 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		3979CA231830613C006E6979 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		39AEB5E0181F2A6100EA48DD /* Week2Missiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2Missiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AEB5E3181F2A6100EA48DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		39AEB5E5181F2A6100EA48DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,8 +63,8 @@
 		39AEB613181F2B4200EA48DD /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		39AEB614181F2B4200EA48DD /* Box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
 		39AEB615181F2B4200EA48DD /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		39AEB618181F2B7000EA48DD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		39AEB619181F2B7000EA48DD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39AEB618181F2B7000EA48DD /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		39AEB619181F2B7000EA48DD /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		39AEB61B181F2BD700EA48DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -126,8 +129,10 @@
 			children = (
 				39AEB5F2181F2A6100EA48DD /* Week2MissilesAppDelegate.h */,
 				39AEB5F3181F2A6100EA48DD /* Week2MissilesAppDelegate.m */,
-				39AEB618181F2B7000EA48DD /* ViewController.h */,
-				39AEB619181F2B7000EA48DD /* ViewController.m */,
+				3979CA221830613C006E6979 /* MenuViewController.h */,
+				3979CA231830613C006E6979 /* MenuViewController.m */,
+				39AEB618181F2B7000EA48DD /* GameViewController.h */,
+				39AEB619181F2B7000EA48DD /* GameViewController.m */,
 				39AEB612181F2B4200EA48DD /* Box.h */,
 				39AEB614181F2B4200EA48DD /* Box.m */,
 				39AEB615181F2B4200EA48DD /* Utility.h */,
@@ -268,10 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AEB5F4181F2A6100EA48DD /* Week2MissilesAppDelegate.m in Sources */,
+				3979CA241830613C006E6979 /* MenuViewController.m in Sources */,
 				39AEB617181F2B4200EA48DD /* Box.m in Sources */,
 				39AEB616181F2B4200EA48DD /* Utility.m in Sources */,
 				39AEB5F0181F2A6100EA48DD /* main.m in Sources */,
-				39AEB61A181F2B7000EA48DD /* ViewController.m in Sources */,
+				39AEB61A181F2B7000EA48DD /* GameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

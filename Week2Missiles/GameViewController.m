@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  GameViewController.m
 //  Week2Missiles
 //
 //  Created by Christopher J Di Luccia on 10/28/13.
@@ -8,13 +8,13 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "Box.h"
-#import "ViewController.h"
+#import "GameViewController.h"
 #import "Utility.h"
 
 #define SCREEN_WIDTH self.view.frame.size.width
 #define SCREEN_HEIGHT self.view.frame.size.height
 
-@interface ViewController ()
+@interface GameViewController ()
 {
     bool gameOver;
     int highScore;
@@ -37,7 +37,7 @@
 
 @end
 
-@implementation ViewController
+@implementation GameViewController
 
 - (void)viewDidLoad
 {

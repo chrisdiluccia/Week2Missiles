@@ -9,20 +9,30 @@
 #import "Week2MissilesAppDelegate.h"
 
 @implementation Week2MissilesAppDelegate
+{
+    MenuViewController *menuViewController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    menuViewController = [[MenuViewController alloc] init];
+	
+	UIScreen *s = [UIScreen mainScreen];
+	self.window = [[UIWindow alloc] initWithFrame: s.bounds];
     
-    // init root view
-    _viewController = [[ViewController alloc]init];
-    // set as root view controller
-    self.window.rootViewController = _viewController;
+    UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController: menuViewController];
     
+    navigationController.navigationBarHidden = YES;
     
-    // Override point for customization after application launch.
+    navigationController.toolbarHidden = YES;
+    
+    self.window.rootViewController = navigationController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
+	
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
